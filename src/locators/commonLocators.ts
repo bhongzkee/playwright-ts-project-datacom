@@ -14,7 +14,7 @@ export const CommonLocators = {
    * - Matches button text case-insensitively.
    *
    * Example:
-   *   CommonLocators.buttonLocator("Add to Cart")
+   *   CommonLocators.buttonLocator("Register")
    *   → //button[contains(translate(normalize-space(string()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), "add to cart")]
    */
   buttonLocator: (buttonName: string): string =>
@@ -47,6 +47,9 @@ export const CommonLocators = {
 
   /**
    * Locator for a dropdown option.
+   * Example:
+   *   CommonLocators.dropdownOptionLocator("Philippines")
+   *   → //div[label[contains(text(), "Philippines")]]/select
    */
   dropdownOptionLocator: (optionName: string): string =>
     `//div[label[contains(text(), "${optionName}")]]/select`,
@@ -56,7 +59,10 @@ export const CommonLocators = {
 
  /**
    * Locator for a checkbox option.
-   */
+ * Example:
+   *   CommonLocators.checkBoxLocator("I agree with the terms and conditions")
+   *   → //div[label[contains(text(), "I agree with the terms and conditions")]]/input[@type="checkbox"]
+     */
   checkBoxLocator: (label: string): string =>
     `//div[label[contains(text(), "${label}")]]/input[@type="checkbox"]`,
 

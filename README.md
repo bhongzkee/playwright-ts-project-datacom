@@ -44,7 +44,7 @@ npx playwright install
 
 
 Running the tests:
-Run test by bash script and automaticall generate and open the allure report
+Run test by bash script and automatically generate and open the allure report
 
 ./run-tests.sh
 
