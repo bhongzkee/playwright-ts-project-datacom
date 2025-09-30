@@ -51,86 +51,132 @@ Run test by bash script and automatically generate and open the allure report
 
 
 
-Expected Test Outputs - 12 test cases failed due to site bugs
+Expected Test Outputs - 14 test cases failed due to site bugs
+
 Herminios-MacBook-Pro:playwright-ts-project-datacom bhong$ ./run-tests.sh
 
-Running 18 tests using 3 workers
+Running 22 tests using 3 workers
 
-  ✘   1 [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:42:7 › Input Fields Valdations › First Name Input Field Should Not Accept All Numbers (11.4s)
-  ✘   2 [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:54:7 › Input Fields Valdations › Last Name Input Field Should Not Accept All Numbers (11.4s)
-  ✘   3 [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:67:7 › Input Fields Valdations › Phone Number Input Field Should Not Accept All Letters (11.4s)
+      1 …romium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:54:7 › Input Fields Valdations › Last Name Input Field Should Not Accept All Numbers › Click On Button: Register
+      2 …omium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:42:7 › Input Fields Valdations › First Name Input Field Should Not Accept All Numbers › Click On Button: Register
+      3 …ser] › src/tests/ui/inputFieldsValidations.spec.ts:67:7 › Input Fields Valdations › Phone Number Input Field Should Not Accept All Letters › Check UI Validation Error Message
 The field "Enter first name" filled with text: TestUserFirstName
 The field "Enter first name" filled with text: 0919123456789
-The field "Enter last name" filled with text: TestUserLastName
-The field "Enter first name" filled with text: TestUserFirstName
+The field "Enter last name" filled with text: 0919123456789
 The field "Enter last name" filled with text: TestUserLastName
 The field "Enter phone number" filled with text: 0919123456789
-The field "Enter last name" filled with text: 0919123456789
+The field "Enter phone number" filled with text: 0919123456789
+The optionn "Philippines" selected
+The optionn "Philippines" selected
+The field "Enter email" filled with text: mail@gmail.com
+The field "Enter email" filled with text: mail@gmail.com
+The field "Password" filled with text: Pass123
+The field "Password" filled with text: Pass123
+The field "Enter first name" filled with text: TestUserFirstName
+The field "Enter last name" filled with text: TestUserLastName
 The field "Enter phone number" filled with text: AllLettersInput
 The optionn "Philippines" selected
-The optionn "Philippines" selected
 The field "Enter email" filled with text: mail@gmail.com
 The field "Password" filled with text: Pass123
+The button "Register" clicked
+The button "Register" clicked
+  ✘   2 [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:42:7 › Input Fields Valdations › First Name Input Field Should Not Accept All Numbers (11.4s)
+The button "Register" clicked
+  ✘   1 [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:54:7 › Input Fields Valdations › Last Name Input Field Should Not Accept All Numbers (11.4s)
+  ✘   3 [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:67:7 › Input Fields Valdations › Phone Number Input Field Should Not Accept All Letters (11.4s)
+      4 …hromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:93:7 › Input Fields Valdations › Email Input Field Should Not Accept Invalid Format › Click On Button: Register
+      5 …putFieldsValidations.spec.ts:80:7 › Input Fields Valdations › Phone Number Input Field Should Not Accept Number and Letters › Input On Text Field: Password with Text: Pass123
+      6 …idations.spec.ts:106:7 › Input Fields Valdations › Terms and Conditions Checkbox Should Be Checked To Submit The Form › Select Checkbox: I agree with the terms and conditions
+The field "Enter first name" filled with text: TestUserFirstName
+The field "Enter last name" filled with text: TestUserLastName
+The field "Enter first name" filled with text: TestUserFirstName
+The field "Enter last name" filled with text: TestUserLastName
 The field "Enter phone number" filled with text: 0919123456789
-The optionn "Philippines" selected
-The field "Enter email" filled with text: mail@gmail.com
-The field "Enter email" filled with text: mail@gmail.com
-The field "Password" filled with text: Pass123
-The field "Password" filled with text: Pass123
-The button "Register" clicked
-The button "Register" clicked
-The button "Register" clicked
-  ✘   4 [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:80:7 › Input Fields Valdations › Phone Number Input Field Should Not Accept Number and Letters (11.2s)
-  ✘   5 [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:93:7 › Input Fields Valdations › Email Input Field Should Not Accept Invalid Format (11.2s)
-  ✘   6 [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:106:7 › Input Fields Valdations › Terms and Conditions Checkbox Should Be Checked To Submit The Form (11.2s)
-The field "Enter first name" filled with text: TestUserFirstName
-The field "Enter first name" filled with text: TestUserFirstName
-The field "Enter last name" filled with text: TestUserLastName
-The field "Enter last name" filled with text: TestUserLastName
-The field "Enter first name" filled with text: TestUserFirstName
-The field "Enter last name" filled with text: TestUserLastName
 The field "Enter phone number" filled with text: 12345AndLettersInput
 The optionn "Philippines" selected
-The field "Enter phone number" filled with text: 12345AndLettersInput
 The optionn "Philippines" selected
-The field "Enter email" filled with text: mail@gmail.com
-The field "Enter phone number" filled with text: 0919123456789
-The optionn "Philippines" selected
+The field "Enter first name" filled with text: TestUserFirstName
+The field "Enter last name" filled with text: TestUserLastName
 The field "Enter email" filled with text: mail@gmail.com
 The field "Password" filled with text: Pass123
 The field "Enter email" filled with text: invalid.gmail.com
 The field "Password" filled with text: Pass123
+The field "Enter phone number" filled with text: 12345AndLettersInput
+The optionn "Philippines" selected
+The field "Enter email" filled with text: mail@gmail.com
 The field "Password" filled with text: Pass123
 The button "Register" clicked
+  ✘   4 [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:93:7 › Input Fields Valdations › Email Input Field Should Not Accept Invalid Format (11.1s)
+  ✘   5 [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:80:7 › Input Fields Valdations › Phone Number Input Field Should Not Accept Number and Letters (11.2s)
 The button "Register" clicked
-      7 …:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Last Name Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message
-  ✓   8 …mNoFirstNameTests.spec.ts:55:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › First Name Submitted Info Should Be Matched On Results Section (1.3s)
-  ✓   9 …pec.ts:50:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Form Should Be Submited Even First Name Input Field Is Blank - Not Required Field (1.3s)
-The field "Enter first name" filled with text: 
-The field "Enter first name" filled with text: 
+  ✘   6 [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:106:7 › Input Fields Valdations › Terms and Conditions Checkbox Should Be Checked To Submit The Form (11.1s)
+      7 … › src/tests/ui/requiredFieldsValidations.spec.ts:54:7 › Required Fields Valdations › Phone Number Input Field Should Not Accept  No Input › Check UI Validation Error Message
+      8 …c/tests/ui/requiredFieldsValidations.spec.ts:42:7 › Required Fields Valdations › Last Name Input Field Should Not  No Input › Input On Text Field: Password with Text: Pass123
+      9 …hromium Browser] › src/tests/ui/requiredFieldsValidations.spec.ts:67:7 › Required Fields Valdations › Email Input Field Should Not Accept No Input › Click On Button: Register
+The field "Enter first name" filled with text: TestUserFirstName
 The field "Enter last name" filled with text: TestUserLastName
+The field "Enter first name" filled with text: TestUserFirstName
+The field "Enter phone number" filled with text: 
+The field "Enter last name" filled with text: TestUserLastName
+The optionn "Philippines" selected
+The field "Enter phone number" filled with text: 12345AndLettersInput
+The field "Enter email" filled with text: mail@gmail.com
+The field "Enter first name" filled with text: TestUserFirstName
+The field "Enter last name" filled with text: 
+The optionn "Philippines" selected
+The field "Password" filled with text: Pass123
+The field "Enter phone number" filled with text: 0919123456789
+The optionn "Philippines" selected
+The field "Enter email" filled with text: 
+The field "Password" filled with text: Pass123
+The button "Register" clicked
+The field "Enter email" filled with text: mail@gmail.com
+The field "Password" filled with text: Pass123
+      8 …m Browser] › src/tests/ui/requiredFieldsValidations.spec.ts:42:7 › Required Fields Valdations › Last Name Input Field Should Not  No Input › Check UI Validation Error Message
+The button "Register" clicked
+      9 …Browser] › src/tests/ui/requiredFieldsValidations.spec.ts:67:7 › Required Fields Valdations › Email Input Field Should Not Accept No Input › Check UI Validation Error Message
+Check Validation Alert Message: The phone number should contain at least 10 characters!
+  ✓   7 [Chromium Browser] › src/tests/ui/requiredFieldsValidations.spec.ts:54:7 › Required Fields Valdations › Phone Number Input Field Should Not Accept  No Input (1.3s)
+The button "Register" clicked
+  ✓  10 [Chromium Browser] › src/tests/ui/requiredFieldsValidations.spec.ts:79:7 › Required Fields Valdations › Password Field Should Not Accept No Input (1.0s)
+The field "Enter first name" filled with text: TestUserFirstName
 The field "Enter last name" filled with text: TestUserLastName
 The field "Enter phone number" filled with text: 0919123456789
+The optionn "Philippines" selected
+The field "Enter email" filled with text: mail@gmail.com
+The field "Password" filled with text: 
+The button "Register" clicked
+Check Validation Alert Message: The password should contain between [6,20] characters!
+  ✓  11 …ts:50:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Form Should Be Submited Even First Name Input Field Is Blank - Not Required Field (1.0s)
 The field "Enter first name" filled with text: 
 The field "Enter last name" filled with text: TestUserLastName
 The field "Enter phone number" filled with text: 0919123456789
 The optionn "Philippines" selected
 The field "Enter email" filled with text: mail@gmail.com
 The field "Password" filled with text: Pass123
-The optionn "Philippines" selected
-The field "Enter email" filled with text: mail@gmail.com
-The field "Password" filled with text: Pass123
-The button "Register" clicked
-The field "Enter phone number" filled with text: 0919123456789
-The optionn "Philippines" selected
-The field "Enter email" filled with text: mail@gmail.com
-The field "Password" filled with text: Pass123
-  ✘   7 …mNoFirstNameTests.spec.ts:61:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Last Name Submitted Info Should Be Matched On Results Section (11.2s)
-Check Submitted Info Results: "First Name" with value ""
 The button "Register" clicked
 Check Validation Alert Message: Successfully registered the following information
-  ✘  10 …tFormNoFirstNameTests.spec.ts:67:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Phone Submitted Info Should Be Matched On Results Section (10.9s)
-  ✘  11 …ormNoFirstNameTests.spec.ts:73:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Country Submitted Info Should Be Matched On Results Section (11.0s)
+  ✓  12 …rstNameTests.spec.ts:55:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › First Name Submitted Info Should Be Matched On Results Section (989ms)
+The field "Enter first name" filled with text: 
+The field "Enter last name" filled with text: TestUserLastName
+The field "Enter phone number" filled with text: 0919123456789
+The optionn "Philippines" selected
+The field "Enter email" filled with text: mail@gmail.com
+The field "Password" filled with text: Pass123
+The button "Register" clicked
+Check Submitted Info Results: "First Name" with value ""
+     13 … Submit Form And Validate Result Section - First Name Input Field Is Blank › Last Name Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message
+The field "Enter first name" filled with text: 
+The field "Enter last name" filled with text: TestUserLastName
+The field "Enter phone number" filled with text: 0919123456789
+The optionn "Philippines" selected
+The field "Enter email" filled with text: mail@gmail.com
+The field "Password" filled with text: Pass123
+The button "Register" clicked
+  ✘   9 [Chromium Browser] › src/tests/ui/requiredFieldsValidations.spec.ts:67:7 › Required Fields Valdations › Email Input Field Should Not Accept No Input (11.3s)
+  ✘   8 [Chromium Browser] › src/tests/ui/requiredFieldsValidations.spec.ts:42:7 › Required Fields Valdations › Last Name Input Field Should Not  No Input (11.3s)
+     14 …:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Phone Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message
+     15 … › Submit Form And Validate Result Section - First Name Input Field Is Blank › Country Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message
 The field "Enter first name" filled with text: 
 The field "Enter last name" filled with text: TestUserLastName
 The field "Enter phone number" filled with text: 0919123456789
@@ -145,7 +191,8 @@ The optionn "Philippines" selected
 The field "Enter email" filled with text: mail@gmail.com
 The field "Password" filled with text: Pass123
 The button "Register" clicked
-  ✓  12 …itFormNoFirstNameTests.spec.ts:78:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Email Submitted Info Should Be Matched On Results Section (1.1s)
+  ✘  13 …irstNameTests.spec.ts:61:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Last Name Submitted Info Should Be Matched On Results Section (11.0s)
+  ✓  16 …rmNoFirstNameTests.spec.ts:78:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Email Submitted Info Should Be Matched On Results Section (1.1s)
 The field "Enter first name" filled with text: 
 The field "Enter last name" filled with text: TestUserLastName
 The field "Enter phone number" filled with text: 0919123456789
@@ -154,16 +201,7 @@ The field "Enter email" filled with text: mail@gmail.com
 The field "Password" filled with text: Pass123
 The button "Register" clicked
 Check Submitted Info Results: "Email" with value "mail@gmail.com"
-     13 …ormWithFirstNameTests.spec.ts:50:7 › Submit Form And Validate Result Section - With First Name › Form Should Be Submited Even First Name Input Field Is Blank - Not Required Field
-     14 …Tests.spec.ts:61:7 › Submit Form And Validate Result Section - With First Name › Last Name Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message
-     15 …n - With First Name › First Name Submitted Info Should Be Matched On Results Section › Before Hooks › beforeEach hook › Input On Text Field: Enter email with Text: mail@gmail.com
-     15 …ult Section - With First Name › First Name Submitted Info Should Be Matched On Results Section › Before Hooks › beforeEach hook › Input On Text Field: Password with Text: Pass123
-     15 …t Form And Validate Result Section - With First Name › First Name Submitted Info Should Be Matched On Results Section › Before Hooks › beforeEach hook › Click On Button: Register
-     15 …ests.spec.ts:55:7 › Submit Form And Validate Result Section - With First Name › First Name Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message
-  ✓  13 …FirstNameTests.spec.ts:50:7 › Submit Form And Validate Result Section - With First Name › Form Should Be Submited Even First Name Input Field Is Blank - Not Required Field (1.2s)
-  ✓  15 …s/ui/submitFormWithFirstNameTests.spec.ts:55:7 › Submit Form And Validate Result Section - With First Name › First Name Submitted Info Should Be Matched On Results Section (1.2s)
-The field "Password" filled with text: Pass123
-The button "Register" clicked
+  ✓  17 …tNameTests.spec.ts:50:7 › Submit Form And Validate Result Section - With First Name › Form Should Be Submited Even First Name Input Field Is Blank - Not Required Field (1.3s)
 The field "Enter first name" filled with text: TestUserFirstName
 The field "Enter last name" filled with text: TestUserLastName
 The field "Enter phone number" filled with text: 0919123456789
@@ -172,16 +210,27 @@ The field "Enter email" filled with text: mail@gmail.com
 The field "Password" filled with text: Pass123
 The button "Register" clicked
 Check Validation Alert Message: Successfully registered the following information
+  ✓  18 …submitFormWithFirstNameTests.spec.ts:55:7 › Submit Form And Validate Result Section - With First Name › First Name Submitted Info Should Be Matched On Results Section (990ms)
 The field "Enter first name" filled with text: TestUserFirstName
 The field "Enter last name" filled with text: TestUserLastName
 The field "Enter phone number" filled with text: 0919123456789
 The optionn "Philippines" selected
-  ✘  14 …s/ui/submitFormWithFirstNameTests.spec.ts:61:7 › Submit Form And Validate Result Section - With First Name › Last Name Submitted Info Should Be Matched On Results Section (11.1s)
+The field "Enter email" filled with text: mail@gmail.com
 The field "Password" filled with text: Pass123
 The button "Register" clicked
 Check Submitted Info Results: "First Name" with value "TestUserFirstName"
-  ✘  16 …tests/ui/submitFormWithFirstNameTests.spec.ts:67:7 › Submit Form And Validate Result Section - With First Name › Phone Submitted Info Should Be Matched On Results Section (11.0s)
-  ✘  17 …sts/ui/submitFormWithFirstNameTests.spec.ts:73:7 › Submit Form And Validate Result Section - With First Name › Country Submitted Info Should Be Matched On Results Section (11.0s)
+     19 …s.spec.ts:61:7 › Submit Form And Validate Result Section - With First Name › Last Name Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message
+The field "Enter first name" filled with text: TestUserFirstName
+The field "Enter last name" filled with text: TestUserLastName
+The field "Enter phone number" filled with text: 0919123456789
+The optionn "Philippines" selected
+The field "Enter email" filled with text: mail@gmail.com
+The field "Password" filled with text: Pass123
+The button "Register" clicked
+  ✘  15 …oFirstNameTests.spec.ts:73:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Country Submitted Info Should Be Matched On Results Section (11.1s)
+     20 …Tests.spec.ts:67:7 › Submit Form And Validate Result Section - With First Name › Phone Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message
+  ✘  14 …mNoFirstNameTests.spec.ts:67:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Phone Submitted Info Should Be Matched On Results Section (11.7s)
+     21 …sts.spec.ts:73:7 › Submit Form And Validate Result Section - With First Name › Country Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message
 The field "Enter first name" filled with text: TestUserFirstName
 The field "Enter last name" filled with text: TestUserLastName
 The field "Enter phone number" filled with text: 0919123456789
@@ -196,7 +245,8 @@ The optionn "Philippines" selected
 The field "Enter email" filled with text: mail@gmail.com
 The field "Password" filled with text: Pass123
 The button "Register" clicked
-  ✓  18 …/tests/ui/submitFormWithFirstNameTests.spec.ts:78:7 › Submit Form And Validate Result Section - With First Name › Email Submitted Info Should Be Matched On Results Section (1.4s)
+  ✘  19 …/submitFormWithFirstNameTests.spec.ts:61:7 › Submit Form And Validate Result Section - With First Name › Last Name Submitted Info Should Be Matched On Results Section (11.0s)
+  ✓  22 …ts/ui/submitFormWithFirstNameTests.spec.ts:78:7 › Submit Form And Validate Result Section - With First Name › Email Submitted Info Should Be Matched On Results Section (1.1s)
 The field "Enter first name" filled with text: TestUserFirstName
 The field "Enter last name" filled with text: TestUserLastName
 The field "Enter phone number" filled with text: 0919123456789
@@ -205,6 +255,8 @@ The field "Enter email" filled with text: mail@gmail.com
 The field "Password" filled with text: Pass123
 The button "Register" clicked
 Check Submitted Info Results: "Email" with value "mail@gmail.com"
+  ✘  20 …s/ui/submitFormWithFirstNameTests.spec.ts:67:7 › Submit Form And Validate Result Section - With First Name › Phone Submitted Info Should Be Matched On Results Section (11.0s)
+  ✘  21 …ui/submitFormWithFirstNameTests.spec.ts:73:7 › Submit Form And Validate Result Section - With First Name › Country Submitted Info Should Be Matched On Results Section (11.1s)
 
 
   1) [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:42:7 › Input Fields Valdations › First Name Input Field Should Not Accept All Numbers › Check UI Validation Error Message 
@@ -223,17 +275,17 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
            - unexpected value "Successfully registered the following information"
 
 
-       at ../pages/challengePage.ts:61
+       at ../pages/challengePage.ts:65
 
-      59 |         await expect(this.page.locator(locatorElement)).not.toHaveText(message);
-      60 |       } catch (error: any) {
-    > 61 |         throw new Error(
+      63 |         await expect(this.page.locator(locatorElement)).not.toHaveText(message);
+      64 |       } catch (error: any) {
+    > 65 |         throw new Error(
          |               ^
-      62 |           `The expected Alert Message was NOT found: ->> ${error.message || error}`
-      63 |         );
-      64 |       }
-        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:61:15
-        at ChallengePage.checkValidationAlertMessageNotToBe (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:56:5)
+      66 |           `The expected Alert Message was NOT found: ->> ${error.message || error}`
+      67 |         );
+      68 |       }
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:65:15
+        at ChallengePage.checkValidationAlertMessageNotToBe (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:60:5)
         at /Users/bhong/Documents/playwright-ts-project-datacom/src/tests/ui/inputFieldsValidations.spec.ts:50:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
@@ -258,17 +310,17 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
            - unexpected value "Successfully registered the following information"
 
 
-       at ../pages/challengePage.ts:61
+       at ../pages/challengePage.ts:65
 
-      59 |         await expect(this.page.locator(locatorElement)).not.toHaveText(message);
-      60 |       } catch (error: any) {
-    > 61 |         throw new Error(
+      63 |         await expect(this.page.locator(locatorElement)).not.toHaveText(message);
+      64 |       } catch (error: any) {
+    > 65 |         throw new Error(
          |               ^
-      62 |           `The expected Alert Message was NOT found: ->> ${error.message || error}`
-      63 |         );
-      64 |       }
-        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:61:15
-        at ChallengePage.checkValidationAlertMessageNotToBe (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:56:5)
+      66 |           `The expected Alert Message was NOT found: ->> ${error.message || error}`
+      67 |         );
+      68 |       }
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:65:15
+        at ChallengePage.checkValidationAlertMessageNotToBe (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:60:5)
         at /Users/bhong/Documents/playwright-ts-project-datacom/src/tests/ui/inputFieldsValidations.spec.ts:62:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
@@ -293,17 +345,17 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
            - unexpected value "Successfully registered the following information"
 
 
-       at ../pages/challengePage.ts:61
+       at ../pages/challengePage.ts:65
 
-      59 |         await expect(this.page.locator(locatorElement)).not.toHaveText(message);
-      60 |       } catch (error: any) {
-    > 61 |         throw new Error(
+      63 |         await expect(this.page.locator(locatorElement)).not.toHaveText(message);
+      64 |       } catch (error: any) {
+    > 65 |         throw new Error(
          |               ^
-      62 |           `The expected Alert Message was NOT found: ->> ${error.message || error}`
-      63 |         );
-      64 |       }
-        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:61:15
-        at ChallengePage.checkValidationAlertMessageNotToBe (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:56:5)
+      66 |           `The expected Alert Message was NOT found: ->> ${error.message || error}`
+      67 |         );
+      68 |       }
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:65:15
+        at ChallengePage.checkValidationAlertMessageNotToBe (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:60:5)
         at /Users/bhong/Documents/playwright-ts-project-datacom/src/tests/ui/inputFieldsValidations.spec.ts:75:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
@@ -328,17 +380,17 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
            - unexpected value "Successfully registered the following information"
 
 
-       at ../pages/challengePage.ts:61
+       at ../pages/challengePage.ts:65
 
-      59 |         await expect(this.page.locator(locatorElement)).not.toHaveText(message);
-      60 |       } catch (error: any) {
-    > 61 |         throw new Error(
+      63 |         await expect(this.page.locator(locatorElement)).not.toHaveText(message);
+      64 |       } catch (error: any) {
+    > 65 |         throw new Error(
          |               ^
-      62 |           `The expected Alert Message was NOT found: ->> ${error.message || error}`
-      63 |         );
-      64 |       }
-        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:61:15
-        at ChallengePage.checkValidationAlertMessageNotToBe (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:56:5)
+      66 |           `The expected Alert Message was NOT found: ->> ${error.message || error}`
+      67 |         );
+      68 |       }
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:65:15
+        at ChallengePage.checkValidationAlertMessageNotToBe (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:60:5)
         at /Users/bhong/Documents/playwright-ts-project-datacom/src/tests/ui/inputFieldsValidations.spec.ts:88:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
@@ -363,17 +415,17 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
            - unexpected value "Successfully registered the following information"
 
 
-       at ../pages/challengePage.ts:61
+       at ../pages/challengePage.ts:65
 
-      59 |         await expect(this.page.locator(locatorElement)).not.toHaveText(message);
-      60 |       } catch (error: any) {
-    > 61 |         throw new Error(
+      63 |         await expect(this.page.locator(locatorElement)).not.toHaveText(message);
+      64 |       } catch (error: any) {
+    > 65 |         throw new Error(
          |               ^
-      62 |           `The expected Alert Message was NOT found: ->> ${error.message || error}`
-      63 |         );
-      64 |       }
-        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:61:15
-        at ChallengePage.checkValidationAlertMessageNotToBe (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:56:5)
+      66 |           `The expected Alert Message was NOT found: ->> ${error.message || error}`
+      67 |         );
+      68 |       }
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:65:15
+        at ChallengePage.checkValidationAlertMessageNotToBe (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:60:5)
         at /Users/bhong/Documents/playwright-ts-project-datacom/src/tests/ui/inputFieldsValidations.spec.ts:101:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
@@ -417,7 +469,77 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
 
     Error Context: test-results/ui-inputFieldsValidations--2c748--Checked-To-Submit-The-Form-Chromium-Browser/error-context.md
 
-  7) [Chromium Browser] › src/tests/ui/submitFormNoFirstNameTests.spec.ts:61:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Last Name Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message 
+  7) [Chromium Browser] › src/tests/ui/requiredFieldsValidations.spec.ts:42:7 › Required Fields Valdations › Last Name Input Field Should Not  No Input › Check UI Validation Error Message 
+
+    Error: The expected Alert Message was NOT found: ->> expect(locator).not.toHaveText(expected) failed
+
+    Locator: locator('//div[@class="alert alert-danger"][@id="message"]')
+    Expected string: not "Successfully registered the following information"
+    Received string: "Successfully registered the following information"
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "not toHaveText" with timeout 10000ms
+      - waiting for locator('//div[@class="alert alert-danger"][@id="message"]')
+        14 × locator resolved to <div role="alert" id="message" class="alert alert-danger">Successfully registered the following information</div>
+           - unexpected value "Successfully registered the following information"
+
+
+       at ../pages/challengePage.ts:65
+
+      63 |         await expect(this.page.locator(locatorElement)).not.toHaveText(message);
+      64 |       } catch (error: any) {
+    > 65 |         throw new Error(
+         |               ^
+      66 |           `The expected Alert Message was NOT found: ->> ${error.message || error}`
+      67 |         );
+      68 |       }
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:65:15
+        at ChallengePage.checkValidationAlertMessageNotToBe (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:60:5)
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/tests/ui/requiredFieldsValidations.spec.ts:50:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/ui-requiredFieldsValidatio-4eae4-t-Field-Should-Not-No-Input-Chromium-Browser/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/ui-requiredFieldsValidatio-4eae4-t-Field-Should-Not-No-Input-Chromium-Browser/error-context.md
+
+  8) [Chromium Browser] › src/tests/ui/requiredFieldsValidations.spec.ts:67:7 › Required Fields Valdations › Email Input Field Should Not Accept No Input › Check UI Validation Error Message 
+
+    Error: The expected Alert Message was NOT found: ->> expect(locator).not.toHaveText(expected) failed
+
+    Locator: locator('//div[@class="alert alert-danger"][@id="message"]')
+    Expected string: not "Successfully registered the following information"
+    Received string: "Successfully registered the following information"
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "not toHaveText" with timeout 10000ms
+      - waiting for locator('//div[@class="alert alert-danger"][@id="message"]')
+        14 × locator resolved to <div role="alert" id="message" class="alert alert-danger">Successfully registered the following information</div>
+           - unexpected value "Successfully registered the following information"
+
+
+       at ../pages/challengePage.ts:65
+
+      63 |         await expect(this.page.locator(locatorElement)).not.toHaveText(message);
+      64 |       } catch (error: any) {
+    > 65 |         throw new Error(
+         |               ^
+      66 |           `The expected Alert Message was NOT found: ->> ${error.message || error}`
+      67 |         );
+      68 |       }
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:65:15
+        at ChallengePage.checkValidationAlertMessageNotToBe (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:60:5)
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/tests/ui/requiredFieldsValidations.spec.ts:75:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/ui-requiredFieldsValidatio-3700e--Should-Not-Accept-No-Input-Chromium-Browser/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/ui-requiredFieldsValidatio-3700e--Should-Not-Accept-No-Input-Chromium-Browser/error-context.md
+
+  9) [Chromium Browser] › src/tests/ui/submitFormNoFirstNameTests.spec.ts:61:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Last Name Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message 
 
     Error: The info results for "Last Name" with value "TestUserLastName" not found: ->> expect(locator).toHaveText(expected) failed
 
@@ -433,17 +555,17 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
            - unexpected value "Last Name: TestUserLastNam"
 
 
-       at ../pages/challengePage.ts:84
+       at ../pages/challengePage.ts:88
 
-      82 |         await expect(this.page.locator(locatorElement)).toHaveText(`${fieldName}: ${value}`);
-      83 |       } catch (error: any) {
-    > 84 |         throw new Error(
+      86 |         await expect(this.page.locator(locatorElement)).toHaveText(`${fieldName}: ${value}`);
+      87 |       } catch (error: any) {
+    > 88 |         throw new Error(
          |               ^
-      85 |           `The info results for "${fieldName}" with value "${value}" not found: ->> ${error.message || error}`
-      86 |         );
-      87 |       }
-        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:84:15
-        at ChallengePage.checkSubmittedInfoResults (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:79:5)
+      89 |           `The info results for "${fieldName}" with value "${value}" not found: ->> ${error.message || error}`
+      90 |         );
+      91 |       }
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:88:15
+        at ChallengePage.checkSubmittedInfoResults (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:83:5)
         at /Users/bhong/Documents/playwright-ts-project-datacom/src/tests/ui/submitFormNoFirstNameTests.spec.ts:62:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
@@ -452,7 +574,7 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
 
     Error Context: test-results/ui-submitFormNoFirstNameTe-44304--Matched-On-Results-Section-Chromium-Browser/error-context.md
 
-  8) [Chromium Browser] › src/tests/ui/submitFormNoFirstNameTests.spec.ts:67:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Phone Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message 
+  10) [Chromium Browser] › src/tests/ui/submitFormNoFirstNameTests.spec.ts:67:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Phone Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message 
 
     Error: The info results for "Phone Number" with value "0919123456789" not found: ->> expect(locator).toHaveText(expected) failed
 
@@ -468,17 +590,17 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
            - unexpected value "Phone Number: 09191234567810"
 
 
-       at ../pages/challengePage.ts:84
+       at ../pages/challengePage.ts:88
 
-      82 |         await expect(this.page.locator(locatorElement)).toHaveText(`${fieldName}: ${value}`);
-      83 |       } catch (error: any) {
-    > 84 |         throw new Error(
+      86 |         await expect(this.page.locator(locatorElement)).toHaveText(`${fieldName}: ${value}`);
+      87 |       } catch (error: any) {
+    > 88 |         throw new Error(
          |               ^
-      85 |           `The info results for "${fieldName}" with value "${value}" not found: ->> ${error.message || error}`
-      86 |         );
-      87 |       }
-        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:84:15
-        at ChallengePage.checkSubmittedInfoResults (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:79:5)
+      89 |           `The info results for "${fieldName}" with value "${value}" not found: ->> ${error.message || error}`
+      90 |         );
+      91 |       }
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:88:15
+        at ChallengePage.checkSubmittedInfoResults (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:83:5)
         at /Users/bhong/Documents/playwright-ts-project-datacom/src/tests/ui/submitFormNoFirstNameTests.spec.ts:68:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
@@ -487,7 +609,7 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
 
     Error Context: test-results/ui-submitFormNoFirstNameTe-6705e--Matched-On-Results-Section-Chromium-Browser/error-context.md
 
-  9) [Chromium Browser] › src/tests/ui/submitFormNoFirstNameTests.spec.ts:73:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Country Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message 
+  11) [Chromium Browser] › src/tests/ui/submitFormNoFirstNameTests.spec.ts:73:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Country Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message 
 
     Error: The info results for "Country" with value "Philippines" not found: ->> expect(locator).toHaveText(expected) failed
 
@@ -503,17 +625,17 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
            - unexpected value "Country: Phillipines"
 
 
-       at ../pages/challengePage.ts:84
+       at ../pages/challengePage.ts:88
 
-      82 |         await expect(this.page.locator(locatorElement)).toHaveText(`${fieldName}: ${value}`);
-      83 |       } catch (error: any) {
-    > 84 |         throw new Error(
+      86 |         await expect(this.page.locator(locatorElement)).toHaveText(`${fieldName}: ${value}`);
+      87 |       } catch (error: any) {
+    > 88 |         throw new Error(
          |               ^
-      85 |           `The info results for "${fieldName}" with value "${value}" not found: ->> ${error.message || error}`
-      86 |         );
-      87 |       }
-        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:84:15
-        at ChallengePage.checkSubmittedInfoResults (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:79:5)
+      89 |           `The info results for "${fieldName}" with value "${value}" not found: ->> ${error.message || error}`
+      90 |         );
+      91 |       }
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:88:15
+        at ChallengePage.checkSubmittedInfoResults (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:83:5)
         at /Users/bhong/Documents/playwright-ts-project-datacom/src/tests/ui/submitFormNoFirstNameTests.spec.ts:74:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
@@ -522,7 +644,7 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
 
     Error Context: test-results/ui-submitFormNoFirstNameTe-d0eb9--Matched-On-Results-Section-Chromium-Browser/error-context.md
 
-  10) [Chromium Browser] › src/tests/ui/submitFormWithFirstNameTests.spec.ts:61:7 › Submit Form And Validate Result Section - With First Name › Last Name Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message 
+  12) [Chromium Browser] › src/tests/ui/submitFormWithFirstNameTests.spec.ts:61:7 › Submit Form And Validate Result Section - With First Name › Last Name Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message 
 
     Error: The info results for "Last Name" with value "TestUserLastName" not found: ->> expect(locator).toHaveText(expected) failed
 
@@ -538,17 +660,17 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
            - unexpected value "Last Name: TestUserLastNam"
 
 
-       at ../pages/challengePage.ts:84
+       at ../pages/challengePage.ts:88
 
-      82 |         await expect(this.page.locator(locatorElement)).toHaveText(`${fieldName}: ${value}`);
-      83 |       } catch (error: any) {
-    > 84 |         throw new Error(
+      86 |         await expect(this.page.locator(locatorElement)).toHaveText(`${fieldName}: ${value}`);
+      87 |       } catch (error: any) {
+    > 88 |         throw new Error(
          |               ^
-      85 |           `The info results for "${fieldName}" with value "${value}" not found: ->> ${error.message || error}`
-      86 |         );
-      87 |       }
-        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:84:15
-        at ChallengePage.checkSubmittedInfoResults (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:79:5)
+      89 |           `The info results for "${fieldName}" with value "${value}" not found: ->> ${error.message || error}`
+      90 |         );
+      91 |       }
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:88:15
+        at ChallengePage.checkSubmittedInfoResults (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:83:5)
         at /Users/bhong/Documents/playwright-ts-project-datacom/src/tests/ui/submitFormWithFirstNameTests.spec.ts:62:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
@@ -557,7 +679,7 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
 
     Error Context: test-results/ui-submitFormWithFirstName-c3b5a--Matched-On-Results-Section-Chromium-Browser/error-context.md
 
-  11) [Chromium Browser] › src/tests/ui/submitFormWithFirstNameTests.spec.ts:67:7 › Submit Form And Validate Result Section - With First Name › Phone Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message 
+  13) [Chromium Browser] › src/tests/ui/submitFormWithFirstNameTests.spec.ts:67:7 › Submit Form And Validate Result Section - With First Name › Phone Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message 
 
     Error: The info results for "Phone Number" with value "0919123456789" not found: ->> expect(locator).toHaveText(expected) failed
 
@@ -573,17 +695,17 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
            - unexpected value "Phone Number: 09191234567810"
 
 
-       at ../pages/challengePage.ts:84
+       at ../pages/challengePage.ts:88
 
-      82 |         await expect(this.page.locator(locatorElement)).toHaveText(`${fieldName}: ${value}`);
-      83 |       } catch (error: any) {
-    > 84 |         throw new Error(
+      86 |         await expect(this.page.locator(locatorElement)).toHaveText(`${fieldName}: ${value}`);
+      87 |       } catch (error: any) {
+    > 88 |         throw new Error(
          |               ^
-      85 |           `The info results for "${fieldName}" with value "${value}" not found: ->> ${error.message || error}`
-      86 |         );
-      87 |       }
-        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:84:15
-        at ChallengePage.checkSubmittedInfoResults (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:79:5)
+      89 |           `The info results for "${fieldName}" with value "${value}" not found: ->> ${error.message || error}`
+      90 |         );
+      91 |       }
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:88:15
+        at ChallengePage.checkSubmittedInfoResults (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:83:5)
         at /Users/bhong/Documents/playwright-ts-project-datacom/src/tests/ui/submitFormWithFirstNameTests.spec.ts:68:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
@@ -592,7 +714,7 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
 
     Error Context: test-results/ui-submitFormWithFirstName-eb0a6--Matched-On-Results-Section-Chromium-Browser/error-context.md
 
-  12) [Chromium Browser] › src/tests/ui/submitFormWithFirstNameTests.spec.ts:73:7 › Submit Form And Validate Result Section - With First Name › Country Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message 
+  14) [Chromium Browser] › src/tests/ui/submitFormWithFirstNameTests.spec.ts:73:7 › Submit Form And Validate Result Section - With First Name › Country Submitted Info Should Be Matched On Results Section › Check UI Validation Error Message 
 
     Error: The info results for "Country" with value "Philippines" not found: ->> expect(locator).toHaveText(expected) failed
 
@@ -608,17 +730,17 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
            - unexpected value "Country: Phillipines"
 
 
-       at ../pages/challengePage.ts:84
+       at ../pages/challengePage.ts:88
 
-      82 |         await expect(this.page.locator(locatorElement)).toHaveText(`${fieldName}: ${value}`);
-      83 |       } catch (error: any) {
-    > 84 |         throw new Error(
+      86 |         await expect(this.page.locator(locatorElement)).toHaveText(`${fieldName}: ${value}`);
+      87 |       } catch (error: any) {
+    > 88 |         throw new Error(
          |               ^
-      85 |           `The info results for "${fieldName}" with value "${value}" not found: ->> ${error.message || error}`
-      86 |         );
-      87 |       }
-        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:84:15
-        at ChallengePage.checkSubmittedInfoResults (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:79:5)
+      89 |           `The info results for "${fieldName}" with value "${value}" not found: ->> ${error.message || error}`
+      90 |         );
+      91 |       }
+        at /Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:88:15
+        at ChallengePage.checkSubmittedInfoResults (/Users/bhong/Documents/playwright-ts-project-datacom/src/pages/challengePage.ts:83:5)
         at /Users/bhong/Documents/playwright-ts-project-datacom/src/tests/ui/submitFormWithFirstNameTests.spec.ts:74:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
@@ -627,24 +749,25 @@ Check Submitted Info Results: "Email" with value "mail@gmail.com"
 
     Error Context: test-results/ui-submitFormWithFirstName-18d26--Matched-On-Results-Section-Chromium-Browser/error-context.md
 
-  12 failed
+  14 failed
     [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:42:7 › Input Fields Valdations › First Name Input Field Should Not Accept All Numbers 
     [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:54:7 › Input Fields Valdations › Last Name Input Field Should Not Accept All Numbers 
     [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:67:7 › Input Fields Valdations › Phone Number Input Field Should Not Accept All Letters 
     [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:80:7 › Input Fields Valdations › Phone Number Input Field Should Not Accept Number and Letters 
     [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:93:7 › Input Fields Valdations › Email Input Field Should Not Accept Invalid Format 
     [Chromium Browser] › src/tests/ui/inputFieldsValidations.spec.ts:106:7 › Input Fields Valdations › Terms and Conditions Checkbox Should Be Checked To Submit The Form 
+    [Chromium Browser] › src/tests/ui/requiredFieldsValidations.spec.ts:42:7 › Required Fields Valdations › Last Name Input Field Should Not  No Input 
+    [Chromium Browser] › src/tests/ui/requiredFieldsValidations.spec.ts:67:7 › Required Fields Valdations › Email Input Field Should Not Accept No Input 
     [Chromium Browser] › src/tests/ui/submitFormNoFirstNameTests.spec.ts:61:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Last Name Submitted Info Should Be Matched On Results Section 
     [Chromium Browser] › src/tests/ui/submitFormNoFirstNameTests.spec.ts:67:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Phone Submitted Info Should Be Matched On Results Section 
     [Chromium Browser] › src/tests/ui/submitFormNoFirstNameTests.spec.ts:73:7 › Submit Form And Validate Result Section - First Name Input Field Is Blank › Country Submitted Info Should Be Matched On Results Section 
     [Chromium Browser] › src/tests/ui/submitFormWithFirstNameTests.spec.ts:61:7 › Submit Form And Validate Result Section - With First Name › Last Name Submitted Info Should Be Matched On Results Section 
     [Chromium Browser] › src/tests/ui/submitFormWithFirstNameTests.spec.ts:67:7 › Submit Form And Validate Result Section - With First Name › Phone Submitted Info Should Be Matched On Results Section 
     [Chromium Browser] › src/tests/ui/submitFormWithFirstNameTests.spec.ts:73:7 › Submit Form And Validate Result Section - With First Name › Country Submitted Info Should Be Matched On Results Section 
-  6 passed (50.1s)
-Report successfully generated to ./allure-reports/generated-allure-report-20250930_105431
+  8 passed (59.5s)
+Report successfully generated to ./allure-reports/generated-allure-report-20250930_124529
 Starting web server...
-Server started at <http://127.0.0.1:50906>. Press <Ctrl+C> to exit
-
+Server started at <http://127.0.0.1:59437>. Press <Ctrl+C> to exit
 
 
 
