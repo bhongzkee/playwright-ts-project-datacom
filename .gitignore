@@ -1,0 +1,15 @@
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+trace.zip
+
+# Node
+node_modules/
+npm-debug.log
+dist/
+.env
+
+# Allure
+allure-report/
+allure-results/
