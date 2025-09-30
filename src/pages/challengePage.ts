@@ -29,6 +29,8 @@ export class ChallengePage {
 
   /**
    * Check UI Validation Alert Message
+   * Usage:
+   *   await challengePage.checkValidationAlertMessage('Successfully registered the following information');
    */
   async checkValidationAlertMessage(message: string): Promise<void> {
     await test.step(`Check UI Validation Error Message`, async () => {
@@ -50,7 +52,9 @@ export class ChallengePage {
 
 
   /**
-   * Check UI Validation Alert Message
+   * Check UI Validation Alert Message Not To Be
+   * Usage:
+   *   await challengePage.checkValidationAlertMessageNotToBe('Successfully registered the following information');
    */
   async checkValidationAlertMessageNotToBe(message: string): Promise<void> {
     await test.step(`Check UI Validation Error Message`, async () => {
@@ -73,7 +77,7 @@ export class ChallengePage {
 
 
   /**
-   * Check UI Validation Alert Message
+   * Check Submitted Info Results
    */
   async checkSubmittedInfoResults(fieldName: string, value: string): Promise<void> {
     await test.step(`Check UI Validation Error Message`, async () => {
