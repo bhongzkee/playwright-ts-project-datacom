@@ -5,7 +5,7 @@ This project is an **end-to-end test automation framework** built using [Microso
 It follows the **Page Object Model (POM)** design pattern for maintainability.
 
 The framework is designed to:
-- Automate user actions and assertions across web pages
+- Automate user actions and assertions across web pages with meaningful error message
 - Separate test logic from UI interactions
 - Run on multiple browsers (Chromium, Firefox, WebKit)
 
