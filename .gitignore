@@ -11,5 +11,6 @@ dist/
 .env
 
 # Allure
+allure-reports/
 allure-report/
 allure-results/
